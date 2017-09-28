@@ -1,0 +1,34 @@
+<idea-plugin>
+  <id>sk.eastcode.idea-demo</id>
+  <name>IntelliJ IDEA Demo</name>
+  <version>0.1</version>
+  <vendor url="http://github.com/novotnyr">Robert Novotny</vendor>
+
+  <description><![CDATA[
+      A sample IntelliJ IDEA DEMO
+    ]]></description>
+
+  <change-notes><![CDATA[
+      0.1 First Release
+    ]]>
+  </change-notes>
+
+  <extensions defaultExtensionNs="com.intellij">
+  </extensions>
+
+  <actions>
+
+    <action id="sk.eastcode.InsertCurrentDateAction" class="InsertCurrentDateAction" text="Print date">
+      <add-to-group group-id="EditMenu" anchor="last"/>
+      <add-to-group group-id="JavaGenerateGroup1" anchor="last" />
+    </action>
+
+    <action id="sk.eastcode.InsertCurrentDateClassAsCommentAction" class="InsertCurrentDateClassAsCommentAction" text="Current date as comment">
+      <add-to-group group-id="EditMenu" anchor="last"/>
+      <add-to-group group-id="JavaGenerateGroup1" anchor="last" />
+    </action>
+
+
+  </actions>
+
+</idea-plugin>
